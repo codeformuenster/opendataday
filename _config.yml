@@ -4,3 +4,4 @@ exclude: [".gitignore", "readme.md", "Gemfile", "Gemfile.lock"]
 markdown: rdiscount
 permalink: pretty
 
+baseurl:     /opendataday
