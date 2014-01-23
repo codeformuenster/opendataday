@@ -1,0 +1,64 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #f2f0df;
+  margin: 0;
+  padding: 0; }
+
+#container {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  #container:before, #container:after {
+    content: " ";
+    display: table; }
+  #container:after {
+    clear: both; }
+  #container #home {
+    margin: 100px 0;
+    box-shadow: 0 0 5px 3px #ccc;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    background: white; }
+    #container #home:last-child {
+      margin-right: 0; }
+    #container #home h1 {
+      color: #607890;
+      font-size: 5em;
+      margin: 0.2em; }
+  #container #mc_embed_signup {
+    width: 100%;
+    background: #a9c1d9;
+    padding: 20px;
+    margin: 20px 0;
+    *zoom: 1; }
+    #container #mc_embed_signup:before, #container #mc_embed_signup:after {
+      content: " ";
+      display: table; }
+    #container #mc_embed_signup:after {
+      clear: both; }
+    #container #mc_embed_signup form {
+      width: 80%;
+      margin: 0 auto; }
+      #container #mc_embed_signup form input#mce-EMAIL {
+        float: left;
+        padding: 5px;
+        font-size: 1.2em;
+        width: 80%;
+        text-align: center; }
+      #container #mc_embed_signup form input#mc-embedded-subscribe {
+        float: left;
+        padding: 7px;
+        margin: 5px 10px;
+        background: #607890;
+        color: white;
+        font-size: 1em;
+        border: none;
+        border-radius: 2px; }
