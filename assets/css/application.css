@@ -62,3 +62,8 @@ body {
         font-size: 1em;
         border: none;
         border-radius: 2px; }
+  #container #tickets {
+    padding: 20px; }
+    #container #tickets h3 {
+      text-align: left;
+      text-transform: uppercase; }
