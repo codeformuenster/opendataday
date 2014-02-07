@@ -5,3 +5,4 @@ markdown: rdiscount
 permalink: pretty
 
 baseurl: "/opendataday"
+#baseurl: ""

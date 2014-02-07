@@ -4,3 +4,5 @@ assets/bourbon
 assets/neat
 assets/css/application.scss
 .bundle
+.gems
+.rbenv-gemsets
