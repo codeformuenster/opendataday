@@ -59,6 +59,16 @@ body {
       margin: 5px;
       padding: 25px 20px;
       color:#fff;}
+    #container #home #intro .infos {
+      text-align: center;
+      margin:50px 0px 10px;
+    }
+    #container #home #intro .button { 
+      color: #FF5905;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: 700;
+    }
     #container #home #intro .track h3 {
       font-size: 1.4em;
     }
