@@ -4,16 +4,23 @@
   box-sizing: border-box; }
 
 body {
-  background: #F8F8F2 url("../back.png");
+  background-image: url("../c4m_2015_flyerbg_white70.png");
+  background-color: #fdfdfd;
+  background-position: center;
+  background-repeat: repeat-y;
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  }
 
 #container {
   *zoom: 1;
-  max-width: 68em;
+  max-width: 60em;
   margin-left: auto;
   margin-right: auto;
-  text-align: center; }
+  padding:10px; }
+  #container a {
+    color: #0D5781;}
   #container:before, #container:after {
     content: " ";
     display: table; }
@@ -21,41 +28,65 @@ body {
     clear: both; }
   #container #home {
     margin: 30px 0;
+    margin-bottom: 0;
     box-shadow: 0 0 5px 3px #ccc;
-    float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    background: white; }
+    background: white; 
+    text-align: center;
+    padding-top: 1px;}
+    #container #home h3 {
+      padding-top: 0;
+    }
     #container #home:last-child {
       margin-right: 0; }
     #container #home h1 {
-      font-family: "ff-meta-web-pro";
       color: #063E5F;
-      font-size: 5em;
-      margin: 0.2em; }
+      font-size: 4em;
+      margin: 0.2em; 
+      margin-bottom: 0;}
     #container #home h2 {
-      font-family: "droid-sans-mono";
-      font-size:2.2em;}
+      font-size:2.0em;}
+    #container #home h3 {
+      font-size:1.5em;}
     #container #home #intro {
-      font-family: "droid-sans-mono";
       line-height: 1.6em;
-      width: 800px;
-      margin: 0 auto;}
-    #container #home #intro section {
-      width: 800px;
-      float: left;
+      width: 90%;
+      margin: 0 auto;
+      text-align: left;}
+    #container #home #intro #mapcontainer {
+      position: relative;
     }
-    #container #home #intro p {
-      padding: 20px 0px;
+    #container #home #intro #mapcontainer span {
+      /*visibility: hidden;*/
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      padding: 2px;
+    }
+    /*#container #home #intro #mapcontainer:hover > span {
+      visibility: visible;
+    }
+    #container #home #intro #mapcontainer:hover > #mapthumbnail {
+      visibility:hidden;
+    }*/
+    #container #home #intro #mapcontainer #mapthumbnail {
       float:left;
+      margin-right:5px;
+    }
+    #container #home #intro .twocolumn {
+      display:inline-block;
+      width:49%;
+      vertical-align:top
+    }
+    #container #home #intro section {
+      width: 80%;
     }
     #container #home #intro .track {
       border-radius: 255px;
       width: 255px;
       height: 255px;
-      font-family: "ff-meta-web-pro";
-      float: left;
       margin: 5px;
       padding: 25px 20px;
       color:#fff;}
@@ -83,7 +114,6 @@ body {
     }
   #container #mc_embed_signup {
     width: 100%;
-    float: left;
     background: #a9c1d9;
     padding: 20px;
     margin: 20px 0;
@@ -100,8 +130,7 @@ body {
         float: left;
         padding: 5px;
         font-size: 1.2em;
-        width: 80%;
-        font-family: "droid-sans-mono";
+        width: 60%;
         text-align: center; }
       #container #mc_embed_signup form input#mc-embedded-subscribe {
         float: left;
@@ -114,19 +143,25 @@ body {
         border-radius: 2px; }
   #container #tickets {
     padding: 20px; 
-    float:left;
     width: 100%;}
     #container #tickets h3 {
       text-align: center;
-      font-family: "ff-meta-web-pro";      
       text-transform: uppercase; }
 
-footer {
-  font-family: "ff-meta-web-pro";      
+div#footer {
   color: #0D5781;
-  background: rgba(255, 255, 255, 0.7);
-  padding: 20px;
+  background: rgba(255, 255, 255, 1);
+  padding: 0px;
+  box-shadow: 0px 0px 5px 3px #CCC;
+  text-align: center;
+  margin-bottom: 25px;
+  width:216px;
+  margin-left:auto;
+  margin-right:auto;
 }
-footer a {
+div#footer a {
   color: #0D5781;
+}
+.hidden {
+  visibility: hidden;
 }
