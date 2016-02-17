@@ -1,6 +1,0 @@
-# General Jekyll Config
-auto: true
-exclude: [".gitignore", "readme.md", "Gemfile", "Gemfile.lock"]
-markdown: rdiscount
-permalink: pretty
-
