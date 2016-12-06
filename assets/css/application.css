@@ -9,8 +9,8 @@ body {
   background-position: center;
   background-repeat: repeat-y;
   margin: 0;
-  padding: 0; 
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;;
   }
 
 #container {
@@ -33,7 +33,7 @@ body {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    background: white; 
+    background: white;
     text-align: center;
     padding-top: 1px;}
     #container #home:last-child {
@@ -41,13 +41,22 @@ body {
     #container #home h1 {
       color: #063E5F;
       font-size: 4em;
-      margin: 0.2em; 
-      margin-bottom: 0;}
+      margin: 0.2em;
+      margin-bottom: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+    }
     #container #home h2 {
-      font-size:2.0em;}
+      font-size:2.0em;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+    }
     #container #home h3 {
       font-size:1.5em;
-      padding-top: 0;}
+      padding-top: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+    }
     #container #home p {
       margin: 3px;
     }
@@ -88,7 +97,7 @@ body {
       text-align: center;
       margin:50px 0px 10px;
     }
-    #container #home #intro .button { 
+    #container #home #intro .button {
       color: #0D5781;
       padding: 20px;
       font-size: 28px;
@@ -101,7 +110,7 @@ body {
       background-color:#3BBBDA;
     }
     #container #home #intro .ho {
-      background-color:#0D709A; 
+      background-color:#0D709A;
     }
     #container #home #intro .dj {
       background-color:#0D5781;
@@ -136,7 +145,7 @@ body {
         border: none;
         border-radius: 2px; }
   #container #tickets {
-    padding: 20px; 
+    padding: 20px;
     width: 100%;}
     #container #tickets h3 {
       text-align: center;
