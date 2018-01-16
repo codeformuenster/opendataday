@@ -1,19 +1,43 @@
 ---
 layout: default
-title: Open Data Day Münster 2017
+title: Open Data Day Münster 2018
+odd_year: 2018
+odd_date: 3. März
+odd_weekday: Samstag
+odd_start: 10
+odd_end: 15
+
+odd_where_venue: Stadtweinhaus
+odd_where_address: Prinzipalmarkt 8-9
+odd_where_city: 48143 Münster
+
+odd_where_osm_link_iframe: https://www.openstreetmap.org/export/embed.html?bbox=7.62628734111786%2C51.961027100424346%2C7.629728615283967%2C51.96220716271855&amp;layer=mapnik&amp;marker=51.96161713545464%2C7.6280079782009125
+odd_where_osm_link_external: https://www.openstreetmap.org/?mlat=51.96162&amp;mlon=7.62801#map=19/51.96162/7.62801
+odd_meetup_link: https://www.meetup.com/OK-Lab-Munster/events/236074849/
+
+odd_agenda:
+  - start: "10:15"
+    end: "10:??"
+    title: bla
+    subtitle: blabla
+  - start: "10:30"
+    end: "11:00"
+    title: foo
+    subtitle: barbaz
+
 ---
 <div id="home">
-  <h3>Open Data Day 2017</h3>
+  <h3>Open Data Day {{ page.odd_year }}</h3>
   <h1>Tag der offenen Daten</h1>
-  <h2>Forum zur Bürgerbeteiligung in Münster</h2>
-  <h2>Samstag, 4. März 2017</h2>
+  <h2>Offene Daten der Stadt Münster - </h2>
+  <h2>{{ page.odd_weekday }}, {{ page.odd_date }} {{ page.odd_year }}</h2>
   <hr/>
   <div id="intro">
-    <p>Am Samstag, den 4. März 2017 trafen sich weltweit Bürger und Bürgerinnen, um sich zum Thema
+    <p>Am {{ page.odd_weekday }}, den {{ page.odd_date }} {{ page.odd_year }} treffen sich weltweit Bürger und Bürgerinnen, um sich zum Thema
       Offene Daten weiterzubilden oder für ihre Kommune neue Anwendungen mit Offenen Daten zu entwickeln.<br />
-      Auch in Münster waren wir dabei.<br />
-      <b>Der Fokus lag in Münser dieses Mal auf das Thema "Bürgerbeteiligung".</b>
-
+      Auch in Münster sind wir dabei.<br />
+      <b>Der Fokus liegt in Münster dieses Mal auf das Thema "???".</b>
+<!--
 <style>
 div.articlelink {
   font-size: 20px;
@@ -26,7 +50,7 @@ div.articlelink {
 
 }
 </style>
-<div  class="articlelink">
+ <div  class="articlelink">
        <a href="http://codeformuenster.org/blog/2017/03/07/odd-2017/">
   <center>
   <img width="400" src="http://codeformuenster.org/img/odd2017/20170304_102402.jpg" />
@@ -36,44 +60,36 @@ div.articlelink {
    mit Fotos und Links zu den Folien der Vorträge.
    </center>
  </a></div>
-
+-->
 
     <div class="twocolumn">
       <div class="twocolumn">
         <h3>Wann:</h3>
-        <p>Samstag, 4. März 2017<br>
-        10 bis 16 Uhr</p>
+        <p>{{ page.odd_weekday }}, {{ page.odd_date }} {{ page.odd_year }}<br>
+        {{ page.odd_start }} bis {{ page.odd_end }} Uhr</p>
       </div>
       <div class="twocolumn">
         <h3>Wo:</h3>
-        <p>VHS Forum<br>
-        Aegidimarkt 4<br>
-        48143 Münster</p>
+        <p>{{ page.odd_where_venue }}<br>
+        {{ page.odd_where_address }}<br>
+        {{ page.odd_where_city }}</p>
         <br />
       </div>
 
-      <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=7.621606886386871%2C51.959605695633044%2C7.624289095401763%2C51.96084033701785&amp;layer=mapnik&amp;marker=51.96022219417608%2C7.622947990894318" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=51.96022&amp;mlon=7.62295#map=19/51.96022/7.62295">Auf OpenStreetMap anzeigen</a></small>
+      <!-- VHS Forum
+      <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=7.621606886386871%2C51.959605695633044%2C7.624289095401763%2C51.96084033701785&amp;layer=mapnik&amp;marker=51.96022219417608%2C7.622947990894318" style="border: 1px solid black"></iframe>
+      <br/>
+      <small><a href="http://www.openstreetmap.org/?mlat=51.96022&amp;mlon=7.62295#map=19/51.96022/7.62295">Auf OpenStreetMap anzeigen</a></small>
+      -->
+      <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ page.odd_where_osm_link_iframe }}" style="border: 1px solid black"></iframe>
+      <br/>
+      <small><a href="{{ page.odd_where_osm_link_external }}">Auf OpenStreetMap anzeigen</a></small>
     </div>
 
     <div class="twocolumn">
-      <h3>Themen und Vorträge:</h3>
-      <ul>
-        <li><b>Grußwort</b> des Landtagsabgeordneten Thomas Marquardt</li>
-        <li><b>"MachmitMünster"</b> - Hintergründe zum Projekt für Bürgerbeteiligung von Heiko Phillipski und Marc Weßeling</li>
-        <li><b>"MünsterWiki"</b> - Die von Bürgern erstellte, freie Enzyklopädie. Vortrag und Fragerunde mit Klaus Otto Nagorsnik vom
-   Verein Bürgernetz e. V.</li>
-        <li><b>"senseBox/openSenseMap"</b> - Die Citizen Science Wetterstation aus Münster</li>
-        <li><b>"Verkehrsunfälle in Münster"</b> - eine Open Data Horrorstory</li>
-        <li><b>"Wunderbox: Status und Weiterentwicklung"</b> - ein Projekt der Open Data Community und Open.NRW, vorgestellt von Thore Fechner</li>
-        <li><b>"Bürgerbeteiligung und Open Government in Münster"</b> - Status Quo</li>
-        <li><b>"Roboterbau in der Schule"</b> - Technikunterricht in der Mittelstufe von Ansgar Jansen</li>
-</ul>
-<p> &nbsp; Ca. um 13:00 Uhr Mittgspause mit Pizza.<br /> &nbsp; Am Nachmittag:</p>
-<ul>
-        <li><b>"Münsteraner Künstler bei den Skulptur-Projekten 2017"</b> - Jochen Kubeja vom Wohnzimmer e.V. wird als Praxisbeispiel
-   zur Teilhabe in der Kunst das Projekt "Schatten-Skulptura" vorstellen. Hier
-   können sich Münsteraner KünstlerInnen bei den Skulptur-Projekten 2017
-   beteiligen. Dazu wird es außerdem einen Workshop geben.</li>
+      <h3>Vorläufige Themen und Vorträge:</h3>
+      <ul>{% for item in page.odd_agenda %}
+        <li><em>{{ item.start }} - {{ item.end }}</em>: <b>{{ item.title }}</b> {{ item.subtitle }}</li>{% endfor %}
       </ul>
     </div>
 
@@ -96,6 +112,6 @@ div.articlelink {
     </p>
 
     <h3>Anmeldung</h3>
-    <p>Die Anmeldung zum Open Data Day über <a href="https://www.meetup.com/OK-Lab-Munster/events/236074849/" target="_blank">Meetup Seite</a> ist freiwillig, hilft uns aber bei der besseren Planung.<br /><strong>Die Teilnahme ist kostenlos!</strong><br />Wer keine Lust hat, sich einen Meetup Account zu machen, kann uns auch tweeten oder eine E-Mail schreiben an: <pre>muenster [at] codefor [punkt] de</pre></p>
+    <p>Die Anmeldung zum Open Data Day über <a href="{{ page.odd_meetup_link }}" target="_blank">Meetup Seite</a> ist freiwillig, hilft uns aber bei der besseren Planung.<br /><strong>Die Teilnahme ist kostenlos!</strong><br />Wer keine Lust hat, sich einen Meetup Account zu machen, kann uns auch tweeten oder eine E-Mail schreiben an: <pre>muenster [at] codefor [punkt] de</pre></p>
   </div>
 </div>
