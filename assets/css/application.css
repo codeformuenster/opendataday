@@ -81,7 +81,8 @@ body {
     #container #home #intro .twocolumn {
       display:inline-block;
       width:49%;
-      vertical-align:top
+      vertical-align:top;
+      padding-bottom: 15px;
     }
     #container #home #intro section {
       width: 80%;
