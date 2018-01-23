@@ -36,6 +36,29 @@ body {
     background: white;
     text-align: center;
     padding-top: 1px;}
+    #container #home .nav {
+      background: rgb(184, 219, 240);
+      margin: 0;
+      display: table;
+      width: 100%;
+    }
+    #container #home .nav ul {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    #container #home .nav ul li {
+      display: inline-block;
+      padding: 30px;
+      cursor: pointer;
+    }
+    #container #home .nav ul li a {
+      text-decoration: none;
+    }
+    #container #home .nav ul li:hover {
+      background: rgb(133, 198, 238);
+      display: inline-block;
+      padding: 30px;
+    }
     #container #home:last-child {
       margin-right: 0; }
     #container #home h1 {

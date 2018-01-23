@@ -57,14 +57,29 @@ odd_agenda:
 <div id="home">
   <h3>Open Data Day {{ page.odd_year }}</h3>
   <h1>Tag der offenen Daten</h1>
-  <h2>Offene Daten der Stadt Münster - </h2>
-  <h2>{{ page.odd_weekday }}, {{ page.odd_date }} {{ page.odd_year }}</h2>
-  <hr/>
+  <h2>{{ page.odd_topic }}</h2>
+  <h3>{{ page.odd_weekday }}, {{ page.odd_date }} {{ page.odd_year }} &ndash; {{ page.odd_where_room }}, {{ page.odd_where_venue }}</h3>
+  <div class="nav">
+    <ul>
+      <a href="#intro"><li>Was ist das?</li></a>
+      <a href="#wann-und-wo"><li>Wann und Wo?</li></a>
+      <a href="#fuer-wen"><li>Für wen ist das?</li></a>
+      <a href="#anmeldung"><li>Anmeldung &amp; Weitere Informationen</li></a>
+    </ul>
+  </div>
   <div id="intro">
-    <p>Am {{ page.odd_weekday }}, den {{ page.odd_date }} {{ page.odd_year }} treffen sich weltweit Bürger und Bürgerinnen, um sich zum Thema
-      Offene Daten weiterzubilden oder für ihre Kommune neue Anwendungen mit Offenen Daten zu entwickeln.<br />
-      Auch in Münster sind wir dabei.<br /></p>
-    <p style="text-align: center"><b>Das Thema dieses Jahr lautet:<br />&bdquo;{{ page.odd_topic }}&ldquo;.</b>
+    <p>Am {{ page.odd_weekday }}, den {{ page.odd_date }} {{ page.odd_year }} findet wieder der Open Data Day statt.
+       An diesem internationalen Tag der offenen Daten soll rund um die Welt durch verschiedene Aktivitäten auf die
+       Bedeutung offener Daten hingewiesen werden.
+       Der Open Data Day ist eine gute Gelegenheit, um auf die Vorteile offener Daten hinzuweisen und den Stellenwert
+       innerhalb von Verwaltung, der Wirtschaft und der Zivilgesellschaft zu erhöhen.
+       Auch in diesem Jahr werden sich Bürgerinnen und Bürger treffen, um sich zum Thema Offene Daten weiterzubilden
+       oder für ihre Gemeinschaft neue Anwendungen mit Offenen Daten zu entwickeln.
+       </p>
+    <!-- <p>Am {{ page.odd_weekday }}, den {{ page.odd_date }} {{ page.odd_year }} treffen sich weltweit Bürger und Bürgerinnen,
+      um sich zum Thema Offene Daten weiterzubilden oder für ihre Kommune neue Anwendungen mit Offenen Daten zu entwickeln.<br />
+      Auch in Münster sind wir dabei.<br /></p> -->
+    <p style="text-align: center"><b>In Münster lautet das Thema dieses Jahr:<br />&bdquo;{{ page.odd_topic }}&ldquo;.</b></p>
 <!--
 <style>
 div.articlelink {
@@ -87,10 +102,9 @@ div.articlelink {
    Hier klicken um zu unserer Zusammenfassung zu gelangen,
    mit Fotos und Links zu den Folien der Vorträge.
    </center>
- </a></div>
+ </a>
 -->
-
-    <div class="twocolumn">
+    <div class="twocolumn" id="wann-und-wo">
       <div class="twocolumn">
         <h3>Wann:</h3>
         <p>{{ page.odd_weekday }}, {{ page.odd_date }} {{ page.odd_year }}<br>
@@ -123,14 +137,17 @@ div.articlelink {
       </ul>
     </div>
 
-    <h3>Ist das etwas für mich?</h3>
+    <div>
+    <h3 id="fuer-wen">Ist das etwas für mich?</h3>
     <p>
       <b>Ich interessiere mich für Transparenz und möchte mich in Münster engagieren.</b><br>
         Ja! Du kannst dich nicht nur über Möglichkeiten und laufende Projekte informieren, sondern auch mitmachen und Ideen geben.<br><br>
       <b>Open Data? Citizen Science? Open Government? Das hab ich noch nie gehört.</b><br>
         Ja! Diese Themen gehen alle etwas an und können uns helfen, die Gestaltung unserer Stadt selbst in die Hand zu nehmen.<br><br>
-
     </p>
+
+    <h3 id="anmeldung">Anmeldung</h3>
+    <p>Die Anmeldung zum Open Data Day über <a href="{{ page.odd_meetup_link }}" target="_blank">Meetup Seite</a> ist freiwillig, hilft uns aber bei der besseren Planung.<br /><strong>Die Teilnahme ist kostenlos!</strong><br />Wer keine Lust hat, sich einen Meetup Account zu machen, kann uns auch tweeten oder eine E-Mail schreiben an: <pre>muenster [at] codefor [punkt] de</pre></p>
 
     <h3>Orga Team: </h3>
     <p>
@@ -140,8 +157,5 @@ div.articlelink {
     <a href="https://twitter.com/toms_rocket"><i class="fa fa-twitter"></i> @toms_rocket</a> <br/>
     <!-- <a href="https://twitter.com/chrki"><i class="fa fa-twitter"></i> @chrki</a> -->
     </p>
-
-    <h3>Anmeldung</h3>
-    <p>Die Anmeldung zum Open Data Day über <a href="{{ page.odd_meetup_link }}" target="_blank">Meetup Seite</a> ist freiwillig, hilft uns aber bei der besseren Planung.<br /><strong>Die Teilnahme ist kostenlos!</strong><br />Wer keine Lust hat, sich einen Meetup Account zu machen, kann uns auch tweeten oder eine E-Mail schreiben an: <pre>muenster [at] codefor [punkt] de</pre></p>
   </div>
 </div>
