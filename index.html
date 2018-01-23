@@ -8,6 +8,7 @@ odd_start: 10
 odd_end: 15
 
 odd_where_venue: Stadtweinhaus
+odd_where_room: Hauptausschusszimmer
 odd_where_address: Prinzipalmarkt 8-9
 odd_where_city: 48143 Münster
 
@@ -70,10 +71,12 @@ div.articlelink {
       </div>
       <div class="twocolumn">
         <h3>Wo:</h3>
-        <p>{{ page.odd_where_venue }}<br>
+        <p>
+        {{ page.odd_where_room }}<br>
+        {{ page.odd_where_venue }}<br>
         {{ page.odd_where_address }}<br>
-        {{ page.odd_where_city }}</p>
-        <br />
+        {{ page.odd_where_city }}
+      </p>
       </div>
 
       <!-- VHS Forum
