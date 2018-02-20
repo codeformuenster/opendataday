@@ -19,38 +19,28 @@ odd_meetup_link: https://www.meetup.com/OK-Lab-Munster/events/247319063/
 odd_eventbrite_link: https://www.eventbrite.de/e/tag-der-offenen-daten-2018-tickets-43356746195
 
 odd_agenda:
-  - start: "??:??"
-    end: "??:??"
+  - start: "10:00"
     title: Begrüßung
-    subtitle: und Rückblick auf das Jahr 2017 von Code for Münster
-  - start: "??:??"
-    end: "??:??"
-    title: Impulsvortrag Digitale Stadt Münster
+    subtitle: und Rückblick auf das Jahr 2017 von Code for Münster &ndash; Tobias Bradtke, Code for Münster
+  - title: Impulsvortrag Digitale Stadt Münster
     subtitle: "&ndash; Stefan Schoenfelder, Betriebsleiter der citeq"
-  - start: "??:??"
-    end: "??:??"
-    title: Pilotprojekt
-    subtitle: Offene Daten zum Thema Familie &ndash; Astrid Reich, Ansprechpartnerin für Open Data bei der citeq
-  - start: "??:??"
-    end: "??:??"
-    title: Rückblick MÜNSTERHACK
-    subtitle: "&ndash; Vorstellung des Projektes &#147;mein-ms&#148;"
-  - start: "??:??"
-    end: "??:??"
-    title: Verkehrsdaten Fahrrad/Auto
+  - title: Verkehrsdaten Fahrrad/Auto
     subtitle: "&ndash; Thomas und Thorben"
-  - start: "??:??"
-    end: "??:??"
-    title: Mittagspause
-    subtitle: "&ndash; Pizza und Plausch"
-  - start: "??:??"
-    end: "??:??"
-    title: Rückblick Schattenskulptura
+  - title: Rückblick MÜNSTERHACK
+    subtitle: "&ndash; Vorstellung des Projektes &#147;mein-ms&#148;"
+  - title: Rückblick Schattenskulptura
     subtitle: "&ndash; Offene und selbstorganisierte Alternative zu den Skulpturprojekten 2017 (Jochen Kubeja)"
-  - start: "??:??"
-    end: "??:??"
-    title: World café/Lean Coffee Offene Daten
+  - title: Mittagspause
+    subtitle: "&ndash; Pizza und Plausch"
+    start: "12:30"
+    end: "13:30"
+  - title: Pilotprojekt
+    subtitle: Offene Daten zum Thema Familie &ndash; Astrid Reich, Ansprechpartnerin für Open Data bei der citeq
+  - title: World café/Lean Coffee Offene Daten
     subtitle: "&ndash; Was wünschen sich die Bürgerinnen und Bürger der Stadt Münster?"
+  - title: Ende der Veranstaltung
+    subtitle: ""
+    start: "etwa 15:00"
 
 
 
@@ -134,7 +124,14 @@ div.articlelink {
     <div class="twocolumn">
       <h3>Vorläufige Themen und Vorträge:</h3>
       <ul>{% for item in page.odd_agenda %}
-        <li><em>{{ item.start }} - {{ item.end }}</em>: <b>{{ item.title }}</b> {{ item.subtitle }}</li>{% endfor %}
+        <li>
+          {% if item.start and item.end %}
+            <em>{{ item.start }} - {{ item.end }}</em>:
+          {% elsif item.start %}
+            <em>{{ item.start }}</em>:
+          {% endif %}
+          <b>{{ item.title }}</b> {{ item.subtitle }}
+        </li>{% endfor %}
       </ul>
     </div>
 
