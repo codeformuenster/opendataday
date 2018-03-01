@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Mein-MS - Offene Daten für Münsters Bürger </title>
+<!-- meta name="description" content="introduction slides for jsrsasign pure JavaScript cryptographic library">
+<meta name="author" content="Kenji Urushima @kjur" -->
+<!-- saved from url=(0043)https://kjur.github.io/jsrsasign/slide_e/#/ -->
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="./lib/reveal.min.css">
+<link rel="stylesheet" href="./lib/night.css" id="theme">
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="./lib/zenburn.css">
+
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+</script><link rel="stylesheet" href="./lib/paper.css" type="text/css" media="print">
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+
+<script src="./lib/jquery-172-min.js"></script>
+<script src="./lib/html5_dropfile.js"></script>
+<script src="./lib/jsrsasign-all-min.js"></script>
+</head>
+
+<body style="transition: -webkit-transform 0.8s ease;">
+<div class="reveal default center" data-transition-speed="default">
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides" style="width: 960px; height: 700px; zoom: 1;">
+
+    <section class="present" style="top: -328px; display: block;">
+        <h1>mein-ms.de</h1>
+        <h3> Offene Daten für Münsters Bürger</h3>
+        <h4><a href="https://github.com/codeformuenster/familien-dashboard" target="_blank" class="roll">
+          <span data-title="https://github.com/codeformuenster/familien-dashboard">https://github.com/codeformuenster/familien-dashboard</span></a></h4>
+        <h4><font color="grey">Vortrag zum Open Data Day 2018</font></h4>
+        <p>
+        <a href="https://twitter.com/toms_rocket" class="roll"><span data-title="@toms_rocket / Thomas Werner">@toms_rocket / Thomas Werner</span></a><br>
+        <br>
+        <br>
+        <br>
+        <font color="#404040">Mit den Pfeiltasten ← ↑ → ↓ kann die Präsentation gesteuert werden</font>
+        </p>
+    </section>
+
+<!-- ************************************************************************* -->
+
+    <section class="future" style="top: -294px; display: block;">
+        <h2>Inhalt</h2>
+        <ul>
+            <li>Worum geht es?</li>
+            <li>Die Idee</li>
+            <li>So geht es weiter</li>
+            <li>Mitmachen</li>
+        </ul>
+    </section>
+
+<!-- ************************************************************************* -->
+
+    <section class="stack future" data-previous-indexv="0" style="top: 0px; display: block;">
+
+        <section class="future">
+            <h1>Worum geht es?</h1>
+        </section>
+
+        <section class="future" style="top: -448px; display: block;">
+            <h2>Die Internetseite<br />www.mein-ms.de</h2>
+            <img src="img/screenshot1.png" border="0" style="border: 0"/>
+        </section>
+
+        <section class="future" style="top: -279px; display: block;">
+            <h2>Was kann das?</h2>
+            <ul>
+              <li>Zeigt "Offene Datensätze" der Stadt Münster an</li>
+            </ul>
+            <br /><br />
+            <h2>Wie funktioniert es?</h2>
+            <ul>
+              <li>Internetseite, erkennt wo man sich gerade befindet</li>
+              <li>Zeigt Interessantes aus der Umgebung: Aktuelle Baustellen, Spielplätze, ..</li>
+              <li>Außerdem: Recherchefunktion - Suchmöglichkeit nach spezifischen Themen, z.B. Glascontainer, Bibliotheken, öffentliche Toiletten, ..</li>
+            </ul>
+        </section>
+
+    </section>
+
+    <section>
+        <section class="future">
+            <h1>Die Idee</h1>
+        </section>
+
+        <section class="future">
+            <h2>2017 - Stadt Münster bekommt "Open Data"-Sponsoring vom Land</h2>
+            <ul>
+              <li>Aufruf an die Bürger, Ideen zu sammeln, welche Informationen aus der Stadtverwaltung veröffentlicht werden könnten.
+              </li>
+              <li>Veranstaltung eines Hackathon (Programmierwettbewerb)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Der Hackathon</h2>
+            <p>
+              <img src="img/muensterhack.png" border="0" style="border: 0"/>
+                            <small>Quelle: <a href="http://www.muensterhack.de/">www.muensterhack.de</a></small>
+            </p>
+        </section>
+
+        <section class="" style="top: -388px; display: block;">
+            <h2>Die von der Stadt veröffentlichten Datensätze</h2>
+            <p>
+              <img src="img/datensaetze.png" border="0" style="border: 0"/>
+            </p>
+        </section>
+
+    </section>
+
+<!-- ************************************************************************* -->
+
+<section>
+    <section class="future">
+        <h1>So geht es weiter</h1>
+    </section>
+
+    <section class="future">
+        <h2>Mehr Datensätze</h2>
+        <ul>
+          <li>Stillräume</li>
+          <li>Wickelplätze</li>
+          <li>Glascontainer</li>
+        </ul>
+    </section>
+
+    <section class="future">
+        <h2>"Dynamische" Datensätze</h2>
+        <ul>
+          <li>Termine </li>
+          <li>evtl. Nachrichten</li>
+          <li>Baustellen</li>
+        </ul>
+    </section>
+
+</section>
+
+
+<!-- ************************************************************************* -->
+
+<section class="stack future" data-previous-indexv="0" style="top: 0px; display: block;">
+
+    <section class="future">
+        <h1>Mitmachen</h1>
+    </section>
+
+    <section>
+        <h2>Projekt-Informationen</h2>
+        <ul>
+          <li>Außschließlich ehrenamtlich</li>
+          <li>Programmcode "Open Source"</li>
+          <li>Datenquellen relativ einfach zu integrieren</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Technisches</h2>
+        <ul>
+          <li>HTML "responsive"</li>
+          <li>React.js</li>
+          <li>Elasticsearch</li>
+          <li>CSS Framework "Bulma.io"</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Weiterführende Ideen</h2>
+        <ul>
+          <li>Kommerzielle Verwertung?</li>
+          <li>Redaktionelle Inhalte?</li>
+          <li>...Mitmachen!</li>
+        </ul>
+    </section>
+
+</section>
+
+<!-- ************************************************************************* -->
+
+<section class="future" style="top: -337.5px; display: block;">
+<h1>Vielen Dank!</h1>
+<p>
+  <a href="https://twitter.com/toms_rocket" class="roll"><span data-title="@toms_rocket / Thomas Werner">@toms_rocket / Thomas Werner</span></a><br>
+  <br clear="all">
+
+<h2>www.mein-ms.de</h2>
+</p>
+</section>
+
+<!-- ************************************************************************* -->
+
+</div>
+<div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;"><div class="navigate-left"></div><div class="navigate-right enabled"></div><div class="navigate-up"></div><div class="navigate-down"></div></aside><div class="state-background"></div><div class="pause-overlay"></div></div>
+
+<!-- ************************************************************************* -->
+
+<script src="./lib/head.min.js"></script>
+<script src="./lib/reveal.min.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+controls: true,
+progress: true,
+history: true,
+center: true,
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+// Optional libraries used to extend on reveal.js
+dependencies: [
+{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]
+});
+</script><script type="text/javascript" src="./lib/highlight.js"></script>
+<script type="text/javascript" src="./lib/zoom.js"></script>
+<script type="text/javascript" src="./lib/notes.js"></script>
+
+
+</body></html>
