@@ -1,6 +1,6 @@
 # Open Data Day Münster
 
-Dieses Repostory enthält die Webseite des Opendatday Münster aus den vergangenen Jahren und diverse Vorträge die auf dem Opendataday gehalten wurden. 
+Dieses Repository enthält die Webseite des Open Data Day Münster aus den vergangenen Jahren und diverse Vorträge, die auf dem Open Data Day gehalten wurden. 
 
 Link zur Webseite: https://codeformuenster.org/opendataday/
 
