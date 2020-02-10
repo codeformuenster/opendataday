@@ -1,4 +1,4 @@
-document.querySelectorAll("#nav li").forEach(function(navEl) {
+document.querySelectorAll("#navbarExampleTransparentExample .navbar-item").forEach(function(navEl) {
   navEl.onclick = function() { toggleTab(this.id, this.dataset.target); }
 });
 
@@ -6,7 +6,7 @@ function toggleTab(selectedNav, targetId) {
   var navEls = document.querySelectorAll("#nav li");
   
   var elmnt = document.getElementById(targetId);
-  elmnt.scrollIntoView(); 
+  elmnt.scrollIntoView( {behavior: 'smooth', block: 'start' }); 
 
   navEls.forEach(function(navEl) {
     if (navEl.id == selectedNav) {
