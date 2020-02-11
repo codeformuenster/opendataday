@@ -1,168 +1,403 @@
----
-layout: default
-title: Open Data Day Münster 2018
-odd_topic: Offene Daten - Was wünschen sich die Bürgerinnen und Bürger der Stadt Münster?
-odd_year: 2018
-odd_date: 3. März
-odd_weekday: Samstag
-odd_start: 10
-odd_end: 15
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Open Data Day Münster 2020</title>
+        <link rel="shortcut icon" href="2020/favicon.ico" type="image/x-icon">
+        <!-- Bulma Version 0.8.x-->
+        <link rel='stylesheet prefetch' href='https://unpkg.com/bulma@0.8.0/css/bulma.min.css'>
+        <link rel="stylesheet" href="2020/tabs.css">
+        <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar is-dark is-fixed-top">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="https://codeformuenster.org/img/cfm_logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+                </a>
+                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+                <div class="navbar-start is-link">
+                    <a class="navbar-item" data-target="pane-2" id="1" class="is-active">
+                        <!-- span class="icon is-small"><i class="fab fa-superpowers"></i></span --> <span>Information</span>
+                    </a>
+                    <a class="navbar-item" data-target="pane-3" id="2" >
+                        Vortragsprogramm
+                    </a>
+                    <a class="navbar-item" data-target="pane-4" id="3" >
+                        Stände im Lesesaal
+                    </a>
+                </div>
 
-odd_where_venue: Stadtweinhaus
-odd_where_room: Hauptausschusszimmer
-odd_where_address: Prinzipalmarkt 8-9
-odd_where_city: 48143 Münster
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <a class="bd-tw-button is-info button" data-social-network="Twitter" 
+                                data-social-action="tweet" data-social-target="#" target="_blank" 
+                                href="https://twitter.com/intent/tweet?text=Open Data Day Münster 2020:;url=https://codeformuenster.org/opendataday">
+                                    <span class="icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </span>
+                                    <span>
+                                        twittern
+                                    </span>
+                                </a>
+                            </p>
+                            <p class="control">
+                                <a class="button is-danger" href="https://www.meetup.com/OK-Lab-Munster/">
+                                    <span class="icon">
+                                        <i class="fas fa-download"></i>
+                                    </span>
+                                    <span>Meetup.com</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="hero is-info native-js">
+            <div class="hero-body">
+                <div class="container">
+                    <br /><br />
+                    <h1 class="title">
+                    Open Data Day Münster 2020
+                    </h1>
+                    <h2 class="subtitle">
+                    Samstag, 7. März &nbsp; - &nbsp; Stadtbücherei Münster
+                    </h2>
+                </div>
+            </div>
+         
+        </section>
 
-odd_where_osm_link_iframe: https://www.openstreetmap.org/export/embed.html?bbox=7.62628734111786%2C51.961027100424346%2C7.629728615283967%2C51.96220716271855&amp;layer=mapnik&amp;marker=51.96161713545464%2C7.6280079782009125
-odd_where_osm_link_external: https://www.openstreetmap.org/?mlat=51.96162&amp;mlon=7.62801#map=19/51.96162/7.62801
-odd_meetup_link: https://www.meetup.com/OK-Lab-Munster/events/247319063/
-odd_eventbrite_link: https://www.eventbrite.de/e/tag-der-offenen-daten-2018-tickets-43356746195
+        <section id="pane-2" class="hero">
+            <div class="hero-body">
+                <div class="container content">
 
-odd_agenda:
-  - start: "10:00"
-    title: Begrüßung
-    subtitle: und Rückblick auf das Jahr 2017 von Code for Münster &ndash; Tobias Bradtke, Code for Münster
-  - title: Impulsvortrag Digitale Stadt Münster
-    subtitle: "&ndash; Stefan Schoenfelder, Betriebsleiter der citeq"
-  - title: Verkehrsdaten Fahrrad/Auto
-    subtitle: "&ndash; Thomas und Thorben"
-  - title: Rückblick MÜNSTERHACK
-    subtitle: "&ndash; Vorstellung des Projektes &#147;mein-ms&#148;"
-  - title: Rückblick Schattenskulptura
-    subtitle: "&ndash; Offene und selbstorganisierte Alternative zu den Skulpturprojekten 2017 (Jochen Kubeja)"
-  - title: Mittagspause
-    subtitle: "&ndash; Pizza und Plausch"
-    start: "12:30"
-    end: "13:30"
-  - title: Pilotprojekt
-    subtitle: Offene Daten zum Thema Familie &ndash; Astrid Reich, Ansprechpartnerin für Open Data bei der citeq
-  - title: World café/Lean Coffee Offene Daten
-    subtitle: "&ndash; Was wünschen sich die Bürgerinnen und Bürger der Stadt Münster?"
-  - title: Ende der Veranstaltung
-    subtitle: ""
-    start: "etwa 15:00"
+                    <h1>Tag der offenen Daten</h1>
+                    <p>Am 7. März findet der 10. internationale "Open Data Day" statt. <br />
+                        An diesem Tag soll auf die Bedeutung Offener Daten hingewiesen
+                        werden. </p>
+                        <p>
+                        Die Möglichkeit, den Open Data Day  
+                        in den Räumen der Stadtbücherei gemeinsam auszurichten, bietet die Gelegenheit, das „Open“ wörtlich zu nehmen und mit Leben zu füllen: 
+                        Viele Münsteraner Initiativen und Aktive sind Teil des Programms. 
+                        
+                        Die Veranstaltung findet in
+                        den Räumen der Stadtbücherei während der normalen Öffnungszeiten
+                        statt.</p>
+                        
+                    <h2>Was bieten wir?</h2>
+                    <p>An Infoständen im Zeitungslesesaal kann man sich informieren, ausprobieren und ins Gespräch kommen.
+                        Parallel dazu finden Vorträge im Lernstudio und im Q-Thek-Erker statt.</p>
+                        <p>Wer mag und Interesse hat, kann einfach ohne Anmeldung vorbeikommen und teilnehmen.</p>
 
+                    <h2>Wann und wo?</h2>
 
+                    <p><b>Samstag, 7. März 2020<br />
+                    11 bis 17 Uhr<br />
+                    Stadtbibliothek<br />
+                    Alter Steinweg 11, 
+                    48143 Münster</b>
+                    </p>
+                    <p><a href="https://geo.stadt-muenster.de/map/?strasse=Alter+Steinweg&hausnummer=11">Lage im Stadtplan</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="hero native-js is-info" id="pane-3" >
+            <div class="hero-body">
+                <div class="container">
 
----
-<div id="home">
-  <h3>Open Data Day {{ page.odd_year }}</h3>
-  <h1>Tag der Offenen Daten</h1>
-  <h2>{{ page.odd_topic }}</h2>
-  <h3>{{ page.odd_weekday }}, {{ page.odd_date }} {{ page.odd_year }} &ndash; {{ page.odd_where_room }}, {{ page.odd_where_venue }}</h3>
-  <div class="nav">
-    <ul>
-      <a href="#intro"><li>Was ist das?</li></a>
-      <a href="#wann-und-wo"><li>Wann und wo?</li></a>
-      <a href="#fuer-wen"><li>Für wen ist das?</li></a>
-      <a href="#anmeldung"><li>Anmeldung &amp; Weitere Informationen</li></a>
-    </ul>
-  </div>
-  <div id="intro">
-    <p>Am {{ page.odd_weekday }}, den {{ page.odd_date }} {{ page.odd_year }} findet wieder der Open Data Day statt.
-       An diesem internationalen Tag der Offenen Daten soll rund um die Welt durch verschiedene Aktivitäten auf die
-       Bedeutung Offener Daten hingewiesen werden.
-       Der Open Data Day ist eine gute Gelegenheit, um die Vorteile Offener Daten aufzuzeigen und den Stellenwert
-       innerhalb von Verwaltung, Wirtschaft und Zivilgesellschaft zu erhöhen.
-       Auch in diesem Jahr treffen sich Menschen, um sich über das Thema Offene Daten zu informieren
-       und für ihre Gemeinschaft neue Anwendungen mit Offenen Daten zu entwickeln.
-       </p>
-    <!-- <p>Am {{ page.odd_weekday }}, den {{ page.odd_date }} {{ page.odd_year }} treffen sich weltweit Bürger und Bürgerinnen,
-      um sich zum Thema Offene Daten weiterzubilden oder für ihre Kommune neue Anwendungen mit Offenen Daten zu entwickeln.<br />
-      Auch in Münster sind wir dabei.<br /></p> -->
-    <p style="text-align: center"><b>In Münster lautet das Thema dieses Jahr:<br />&bdquo;{{ page.odd_topic }}&ldquo;.</b></p>
-<!--
-<style>
-div.articlelink {
-  font-size: 20px;
-  display:block;
-  margin:20px;
-  border-radius:15px;
-  background-color:#ccf;
-  padding:20px 30px;
-  border: 2px solid black;
+                    <h2 class="title">Vortragsprogramm </h2>
+                    <div class="columns">
+                        <div class="column">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Eröffnung</strong>
+                                            <span class="room"><i>11:00 Uhr</i> - ZEITUNGSLESESAAL</span>
+                                            Der Open Data Day wird offiziell durch Bürgermeisterin
+                                            Wendela-Beate Vilhjalmsson und Stefan Schoenfelder, Betriebsleiter
+                                            der Citeq eröffnet. Anschließend folgt der Jahresrückblick und eine
+                                            Projektübersicht von Gerald Pape von Code for Münster.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="column">
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Digitransit</strong>
+                                            <span class="room"><i>12:00 Uhr - </i>Q-THEK / ERKER | CODE FOR MÜNSTER</span>
+                                            <i>Open Source Fahrplanauskunft mit Open Data</i><br />
+                                            DB Navigator oder Stadtwerke App? Eine
+                                            Alternative dazu bietet die Fahrplanauskunft
+                                            „Digitransit“, komplett auf Basis freier Software
+                                            und offener Datenquellen. Der Vortrag zeigt
+                                            den aktuellen Stand unserer Digitransit-Instanz für Münster auf.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Digitale Stadt Münster</strong>
+                                            <span class="room"><i>12:00 Uhr - </i>LERNSTUDIO | CITEQ</span>
+                                            Stefan Schönfelder, Betriebsleiter des städtischen IT-Dienstleisters citeq informiert über die Stände 
+                                            und Planungen zu den aktuellen Digitalisierungsmaßnahmen.                                                    
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Smart Home</strong>
+                                            <span class="room"><i>13:00 Uhr - </i>Q-THEK / ERKER </span>
+                                            Ein Vortrag zum Thema Smart Home
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="media">
+                                <!--div class="media-left">
+                                    <i class="fab fa-github-alt fa-4x"></i>
+                                </div -->
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong> Freifunk Münsterland - Freies WLAN für alle</strong>
+                                            <span class="room"><i>13:00 Uhr - </i>LERNSTUDIO | FREIFUNK</span>
+                                            Freifunk Münsterland ist ein öffentliches, von Bürgern organisiertes,
+                                            freies WLAN, dessen Ziel es ist, eine flächendeckende Abdeckung innerhalb Münsters, 
+                                            Warendorfs und den anderen Städten und Dörfern zu
+                                            erreichen. Jeder kann mitmachen. Die Informationen zur Freifunk-Infrastruktur sind transparent 
+                                            und offen. In diesem Vortrag wird gezeigt,
+                                            wie Freifunk funktioniert. Es gibt Zeit für Fragen an die Freifunk-Macher.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Offene Sensordaten für Jedermann - Ein Citizen Science-
+                                                Projekt basierend auf Open Source und Open Hardware</strong>
+                                            <br>
+                                            <span class="room"><i>14:00 Uhr - </i>Q-THEK / ERKER | SENSEBOX</span>
+                                            Die senseBox ist ein DIY Citizen Science Baukasten, mit dem jeder an
+                                            Forschung und Wissenschaft teilnehmen kann. Die Messung und Aus-
+                                            wertung von Umweltdaten liegt dabei im Fokus.
+                                            Der Vortrag geht auf die Arbeit des senseBox Projektes im Bereich Open
+                                            Source, Open Data, Open Hardware und Open Educational Resources
+                                            ein. Aktuelle Probleme sowie technische Hürden und die Genauigkeit
+                                            der Daten werden kritisch betrachtet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Stadtgeschichte online!</strong>
+                                            <span class="room"><i>14:00 Uhr - </i>LERNSTUDIO |
+                                                STADTARCHIV</span>
+                                            Dr. Peter Worm, Leiter des Stadtarchivs, informiert über die digitale
+                                            Recherchemöglichkeiten und Angebote des Stadtarchivs und steht
+                                            für Fragen zur Verfügung. Noch tiefer in die historischen Quellen
+                                            einsteigen? Kein Problem: Parallel zum Open Data Day findet an diesem
+                                            Samstag unter dem Titel „Kommunikation. Von der Depesche bis zum Tweet“ der bundesweite Tag der Archive statt. Das Programm der
+                                            geplanten Führungen, Workshops und Infostände unter: 
+                                            <a target="_blank" href="https://www.stadt-muenster.de/archiv/startseite/tag-der-archive-2018.html">Tag der Archive Münster</a></p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Verkehrsunfälle Münster</strong>
+                                            <br>
+                                            <span class="room"><i>15:00 Uhr - </i>Q-THEK / ERKER | CODE FOR
+                                                MÜNSTER</span>
+                                            Mitglieder von Code for Münster haben durch eine Anfrage nach dem
+Informationsfreiheitsgesetz die Verkehrsunfallstatistiken der Stadt
+Münster seit dem Jahr 2007 erhalten. Diese enthalten jeden einzelnen
+Verkehrsunfall mit detaillierten Informationen wie z.B. den beteiligten
+Personen und Fahrzeugen, den genauen Umständen des Unfalls wie
+Vorgang und Ursache sowie Licht-, Straßen- und Wetterverhältnisse.
+Dieser Vortrag präsentiert eine Möglichkeit, wie jeder Interessierte ohne
+technisches Vorwissen diese Daten einsehen und analysieren kann<!-- ,
+interaktiv im Webbrowser. Wir gehen auf einige Besonderheiten und
+Schwierigkeiten ein und sammeln gemeinsam Ideen zu interessanten
+Fragestellungen und Maßnahmen für den Datensatz-->.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Open Data in Münster</strong>
+                                            <span class="room"><i>15:00 Uhr - </i>LERNSTUDIO | CITEQ</span>
+                                            Die Stadtverwaltung Münster veröffentlicht seit September 2019
+offene Daten für die Stadtgesellschaft auf einem Open Data Portal unter
+https://opendata.stadt-muenster.de. Der städtische Open Data Koordinator Thomas Werner zeigt, was man damit machen kann, wie es hinter
+den Kulissen der Stadtverwaltung funktioniert, und was für die Zukunft
+geplant ist.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>                                    
+                        </div>
+                    </div>                            
+                    <div class="columns">
+                        <div class="column">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Stefan Mey, Darknet</strong>
+                                            <br>
+                                            <span class="room"><i>16:00 Uhr - </i>KULTURETAGE | STEFAN MEY</span>
 
-}
-</style>
- <div  class="articlelink">
-       <a href="http://codeformuenster.org/blog/2017/03/07/odd-2017/">
-  <center>
-  <img width="400" src="http://codeformuenster.org/img/odd2017/20170304_102402.jpg" />
-  <br />
-  <b>Das war der Open Data Day Münster 2017</b> -
-   Hier klicken um zu unserer Zusammenfassung zu gelangen,
-   mit Fotos und Links zu den Folien der Vorträge.
-   </center>
- </a>
--->
-    <div class="twocolumn" id="wann-und-wo">
-      <div class="twocolumn">
-        <h3>Wann:</h3>
-        <p>{{ page.odd_weekday }}, {{ page.odd_date }} {{ page.odd_year }}<br>
-        {{ page.odd_start }} bis {{ page.odd_end }} Uhr</p>
-      </div>
-      <div class="twocolumn">
-        <h3>Wo:</h3>
-        <p>
-        {{ page.odd_where_room }}<br>
-        {{ page.odd_where_venue }}<br>
-        {{ page.odd_where_address }}<br>
-        {{ page.odd_where_city }}
-      </p>
-      </div>
+                                                Drogen, Waffen und Politik in der digitalen Unterwelt<br />
+                                                Das Darknet ist voller Widersprüche. Die berühmt-berüchtigte digitale
+                                                Unterwelt ist eine professionelle „Einkaufsmeile“
+                                                für Drogen, dort werden Waffen gehandelt und
+                                                in der digitalen Unterwelt passiert auch noch
+                                                Schlimmeres. Gleichzeit ist das Darknet ein
+                                                Schutzraum: Politische Aktivisten verstecken sich
+                                                dort vor Überwachung und umgehen Zensur,
+                                                und Medien wie die Süddeutsche Zeitung oder
+                                                die taz bieten anonyme Darknet-Postfächer an.
+                                                Wir schauen uns diesen widersprüchlichen Ort
+                                                an und fragen uns, ob er nicht auch ein wichtiges
+                                                Gegenmodell zum perfekt überwachbaren Internet von heute ist. Nicht
+                                                nur der Blick aufs Darknet, sondern auch auf das „normale“ Internet wird
+                                                nach dem Vortrag ein anderer sein.
+                                            </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="column">
+                        </div>
+                    </div>                            
 
-      <!-- VHS Forum
-      <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=7.621606886386871%2C51.959605695633044%2C7.624289095401763%2C51.96084033701785&amp;layer=mapnik&amp;marker=51.96022219417608%2C7.622947990894318" style="border: 1px solid black"></iframe>
-      <br/>
-      <small><a href="http://www.openstreetmap.org/?mlat=51.96022&amp;mlon=7.62295#map=19/51.96022/7.62295">Auf OpenStreetMap anzeigen</a></small>
-      -->
-      <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ page.odd_where_osm_link_iframe }}" style="border: 1px solid black"></iframe>
-      <br/>
-      <small><a href="{{ page.odd_where_osm_link_external }}">Auf OpenStreetMap anzeigen</a></small>
-    </div>
+                </div>
+            </div>
+        
+        </section>
+        <section id="pane-4" class="hero">
+            <div class="hero-body">
+                <div class="container content">
 
-    <div class="twocolumn">
-      <h3>Vorläufige Themen und Vorträge:</h3>
-      <ul>{% for item in page.odd_agenda %}
-        <li>
-          {% if item.start and item.end %}
-            <em>{{ item.start }} - {{ item.end }}</em>:
-          {% elsif item.start %}
-            <em>{{ item.start }}</em>:
-          {% endif %}
-          <b>{{ item.title }}</b> {{ item.subtitle }}
-        </li>{% endfor %}
-      </ul>
-    </div>
+                    <h1>Infostände im Zeitungslesesaal</h1>
+                    <p>
+                        Hier kann man das „open“ wörtlich nehmen und sich über Open
+                        Data, laufende Projekte und die Protagonisten informieren. Sie
+                        treffen auf Code4Münster, Freifunker, senseBox, Verein Bürgernetz,
+                        Volkshochschule Münster, Warpzone - und die Stadtbücherei Münster.
+                        Außerdem gibt es ein Open-Data-Quiz für‘s Handy.
+                        <span class="room">SAMSTAG, 7. MÄRZ, VON 11 - 16 UHR | ZEITUNGSLESESAAL</span>
+                        </p>
 
-    <div>
-    <h3 id="fuer-wen">Ist das etwas für mich?</h3>
-    <p>
-      <b>Ich interessiere mich für Transparenz und möchte mich in Münster engagieren.</b><br>
-        Ja! Du kannst dich nicht nur über Möglichkeiten und laufende Projekte informieren, sondern auch mitmachen und Ideen geben.<br><br>
-      <b>Open Data? Citizen Science? Open Government? Das hab ich noch nie gehört.</b><br>
-        Ja! Diese Themen gehen alle etwas an und helfen uns, die Gestaltung unserer Stadt selbst in die Hand zu nehmen.<br><br>
-    </p>
+<p>
+                        Die senseBox ist ein Do-it-yourself-Bausatz für stationäre und mobile
+Sensorstationen - ein Citizen Science Toolkit für jedermann.
+Vor Ort gibt es die Möglichkeit die senseBox am Mitmachstationen
+auszuprobieren.
 
-    <h3 id="anmeldung">Anmeldung</h3>
-    <p>Die Anmeldung zum Open Data Day über unsere
-      <a href="{{ page.odd_meetup_link }}" target="_blank">Meetup Seite</a>
-      ist freiwillig, hilft uns aber besser zu planen.
-      <br />
-      <strong>Die Teilnahme ist kostenlos!</strong>
-      <br />Wer keine Lust hat, sich einen Meetup Account zu machen,
-      kann sich auch über
-      <a href="{{ page.odd_eventbrite_link }}" target="_blank">Eventbrite</a> anmelden,
-      tweeten oder uns eine E-Mail an <pre style="display: inline">muenster [at] codefor [punkt] de</pre> schreiben.
-    </p>
+<span class="room">SAMSTAG, 7. MÄRZ, VON 11 - 16 UHR | ZEITUNGSLESESAAL | SENSEBOX</span>
+</p>
 
-    <h3>Orga Team: </h3>
-    <p>
-    <a href="https://twitter.com/codeformuenster"><i class="fa fa-twitter"></i> <b>@codeformuenster</b></a> <br/>
-    <a href="https://twitter.com/ubergesundheit"><i class="fa fa-twitter"></i> @ubergesundheit</a> <br/>
-    <a href="https://twitter.com/webwurst"><i class="fa fa-twitter"></i> @webwurst</a> <br/>
-    <a href="https://twitter.com/toms_rocket"><i class="fa fa-twitter"></i> @toms_rocket</a> <br/>
-    <!-- <a href="https://twitter.com/chrki"><i class="fa fa-twitter"></i> @chrki</a> -->
-    </p>
-  </div>
-</div>
+                  <br /><br />
+                        <h2>Ist das etwas für mich?</h2>
+
+                    <b>Ich interessiere mich für Transparenz und möchte mich in Münster engagieren.</b><br/>
+                    Ja! Du kannst dich nicht nur über Möglichkeiten und laufende Projekte informieren, sondern auch mitmachen und Ideen geben.
+<br /><br />
+                    <b>Open Data? Citizen Science? Open Government? Das hab ich noch nie gehört.</b><br />
+                    Ja! Diese Themen gehen alle etwas an und helfen uns, die Gestaltung unserer Stadt selbst in die Hand zu nehmen.
+                    <br /><br />
+                    <h2>Anmeldung</h2>
+
+                    Die Anmeldung zum Open Data Day über unsere Meetup Seite ist freiwillig, hilft uns aber besser zu planen.
+                    Die Teilnahme ist kostenlos!
+
+<h1>Orga Team:</h1>
+
+@codeformuenster<br />
+@ubergesundheit<br />
+@webwurst<br />
+@toms_rocket
+                </div>
+            </div>
+        </section>
+        <section class="hero is-medium is-dark is-bold">
+            <div class="hero-body">
+              <div class="container has-text-centered">
+
+                <ul class="is-dark uk-subnav uk-subnav-line uk-flex-center">
+                    <li><a href="https://github.com/codeformuenster">GitHub</a></li>
+                    <li><a href="https://github.com/codeformuenster/codeformuenster/issues">Issues</a></li>
+                    <li><a href="https://github.com/orgs/codeformuenster/people">Komplette Mitgliederliste</a></li>
+                    <li><a href="https://twitter.com/codeformuenster">Twitter</a></li>
+                    <li><a href="//codeformuenster.org/impressum/index.html#impressum">Impressum</a></li>
+                    <li><a href="//codeformuenster.org/impressum/index.html#datenschutz">Datenschutzerklärung</a></li>
+                </ul>
+
+                <div class="uk-panel">
+                    <a href="https://codeformuenster.org"><img src="https://codeformuenster.org/img/cfm_logo.png"></a>
+                </div>
+
+              </div>
+            </div>
+          </section>
+    <script src="2020/bulma.js"></script>
+    <script src="2020/tabs.js"></script>
+</body>
+</html>
