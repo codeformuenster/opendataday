@@ -18,6 +18,9 @@ position: relative;
 left: 50%;
 transform: translateX(-50%);
 }
+.muensterlogo {height: 50pt;}
+
+/* c4m footer styles */
 .uk-subnav > * > * {
     display: inline-block;
     color: #ddd;
@@ -37,6 +40,10 @@ transform: translateX(-50%);
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
+}
+.uk-subnav a:hover {
+    color: 
+    white;
 }
 .uk-subnav {
     display: -ms-flexbox;
@@ -66,12 +73,40 @@ transform: translateX(-50%);
     height: 10px;
     vertical-align: middle;
 }
+
+#info-logos img, .logo-img  {
+    margin: 5px 5px;
+    height:70px;
+    display:block
+}
+.logo-img {
+    margin-left: -12px;
+}
+#info-logos .img {
+    float:left; 
+    background-color:#fff;
+    margin:5px 5px
+}
+#pane-5 {background-color:#eee}
+/*  vortragsprogramm styling */
 .native-js.is-info {
 	background: linear-gradient(-30deg, #222255E5, #222255E5 45%, #222255 45%) #fff;
   }
 .native-js.is-info strong {
 	color:white
 }
+.native-js.is-info strong {
+    color: white;
+    background-color: #69f;
+    width: 100%;
+    display: block;
+    color:black;
+    padding: 4px 8px;
+    font-size: 12pt;
+    margin-bottom: 5px;
+    border-radius: 6px;
+}
+
 .is-active {
 display: initial;
 }
@@ -86,7 +121,8 @@ border: 1px solid #ccc}
 {display: block;
 margin: 0 auto;}
 
-/* CSS from http://embedresponsively.com */
+
+/* CSS from http://embedresponsively.com 
 .embed-container {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -103,3 +139,4 @@ margin: 0 auto;}
 	width: 100%;
 	height: 100%;
 }
+*/
