@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Open Data Day Münster 2020</title>
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <!-- Bulma Version 0.8.x-->
+        <link rel='stylesheet prefetch' href='https://unpkg.com/bulma@0.8.0/css/bulma.min.css'>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <style>
+            .card-image {cursor:pointer}
+            .oddImage {width:80%}
+        </style>
+    </head>
+    <body>
+        <div class="content is-large">
+            <h1>Open Data Day Münster 2020 - Fotogalerie</h1>
+            <p>Impressionen vom Open Data Day in der Stadtbücherei am 07.März 2020</p>
+            
+        </div>
+        
+
+  <div class="columns is-multiline" id="photos">
+
+
+  </div>
+
+  <div class="modal" id="photoModal">
+    <div class="modal-background"></div>
+    <div class="oddImage">
+      <p class="image">
+        <img src="https://bulma.io/images/placeholders/1280x960.png" id="photoDetail">
+      </p>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+
+  </div>
+
+
+  <script>
+    const photos = [
+/*        {   "title": "Eingang der Stadtbücherei",
+            "url": "https://github.com/codeformuenster/codeformuenster-fotos-bilder/raw/master/2020-03-07_open_data_day/Photo%2020-03-07%2008-56-23%203073.jpg",
+            "rights": "Gerald Pape" 
+        },
+*/        {   "title": "Aufbau",
+            "url": "https://github.com/codeformuenster/codeformuenster-fotos-bilder/raw/master/2020-03-07_open_data_day/Photo%2020-03-07%2010-19-34%203074.jpg",
+            "rights": "Gerald Pape" 
+        },
+        {   "title": "Aufbau mit Beamer",
+            "url": "https://github.com/codeformuenster/codeformuenster-fotos-bilder/raw/master/2020-03-07_open_data_day/Photo%2020-03-07%2010-19-42%203075.jpg",
+            "rights": "Gerald Pape" 
+        },
+        {   "title": "Freifunk-Stand",
+            "url": "https://github.com/codeformuenster/codeformuenster-fotos-bilder/raw/master/2020-03-07_open_data_day/Photo%2020-03-07%2010-19-51%203076.jpg",
+            "rights": "Gerald Pape" 
+        },
+        {   "title": "Impression Lesesaal",
+            "url": "https://github.com/codeformuenster/codeformuenster-fotos-bilder/raw/master/2020-03-07_open_data_day/Photo%2020-03-07%2010-19-53%203077.jpg",
+            "rights": "Gerald Pape" 
+        },
+        {   "title": "CodeForMünster Stand",
+            "url": "https://github.com/codeformuenster/codeformuenster-fotos-bilder/raw/master/2020-03-07_open_data_day/Photo%2020-03-07%2010-35-09%203078.jpg",
+            "rights": "Gerald Pape" 
+        },
+/*        {   "title": "CodeForMünster Stand",
+            "url": "https://github.com/codeformuenster/codeformuenster-fotos-bilder/raw/master/2020-03-07_open_data_day/Photo%2020-03-07%2010-35-11%203079.jpg",
+            "rights": "Gerald Pape" 
+        },
+*/        {   "title": "Q-Thek",
+            "url": "https://github.com/codeformuenster/codeformuenster-fotos-bilder/raw/master/2020-03-07_open_data_day/Photo%2020-03-07%2010-37-31%203080.jpg",
+            "rights": "Gerald Pape" 
+        },
+        {   "title": "Q-Thek #2",
+            "url": "https://github.com/codeformuenster/codeformuenster-fotos-bilder/raw/master/2020-03-07_open_data_day/Photo%2020-03-07%2010-37-38%203081.jpg",
+            "rights": "Gerald Pape" 
+        },
+        {   "title": "Lesesaal von oben",
+            "url": "https://github.com/codeformuenster/codeformuenster-fotos-bilder/raw/master/2020-03-07_open_data_day/Photo%2020-03-07%2010-39-58%203082.jpg",
+            "rights": "Gerald Pape" 
+        },
+        {   "title": "Diskussion im Lesesaal",
+            "url": "https://github.com/codeformuenster/codeformuenster-fotos-bilder/raw/master/2020-03-07_open_data_day/Photo%2020-03-07%2011-44-06%203083.jpg",
+            "rights": "Gerald Pape" 
+        },
+        {   "title": "Smart City Vortrag",
+            "url": "https://github.com/codeformuenster/codeformuenster-fotos-bilder/raw/master/2020-03-07_open_data_day/Photo%2020-03-07%2012-01-35%203084.jpg",
+            "rights": "Gerald Pape" 
+        },
+        {   "title": "Freifunk Infrastruktur Poster",
+            "url": "https://github.com/codeformuenster/codeformuenster-fotos-bilder/raw/master/2020-03-07_open_data_day/Photo%2020-03-07%2013-39-52%203085.jpg",
+            "rights": "Gerald Pape" 
+        },
+/*        {   "title": "Eingang",
+            "url": "",
+            "rights": "Gerald Pape" 
+        },        
+        {   "title": "Eingang",
+            "url": "",
+            "rights": "Gerald Pape" 
+        },
+        {   "title": "Eingang",
+            "url": "",
+            "rights": "Gerald Pape" 
+        },
+    */    ];
+
+    photos.forEach(function(photo, index) 
+    {
+        var $ele = $('<div class="column is-one-quarter-desktop is-half-tablet"><div class="card">'
+          +'<div class="card-image">'
+              +'<figure class="image is-4by3">'
+               +'<img src="'+photo.url+'" alt=""></figure>'
+              +'<div class="card-content is-overlay is-clipped"><span class="tag is-info">'+photo.title+'</span></div></div>'
+          +'<footer class="card-footer"><a class="card-footer-item">Fotograf: ' + photo.rights + '</a></footer>'
+          +'</div></div>');
+        $ele.click(function(ele){
+            $("#photoDetail").attr('src', photo.url);
+            $("#photoModal").addClass('is-active');
+        })
+        $("#photos").append($ele);
+    });
+    $('.modal-close').click(function(ele) {
+        $("#photoModal").removeClass('is-active');
+    })
+</script>
+
+
+
+</body>
+</html>
