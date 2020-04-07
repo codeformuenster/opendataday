@@ -4,6 +4,15 @@ Dieses Repository enthält die Webseite des Open Data Day Münster aus den verga
 
 Link zur Webseite: https://codeformuenster.org/opendataday/
 
+## 2020
+
+Vortragsfolien
+ * Vortrag zum Verkehrsunfallprojekt: [vortraege-2020/Verkehrsunfallstatistiken_fuer_Muenster_fuer_jedermann.pdf](vortraege-2020/Verkehrsunfallstatistiken_fuer_Muenster_fuer_jedermann.pdf)
+
+Zeitungsartikel: https://www.wn.de/Muenster/4166309-Open-Data-Day-in-der-Stadtbuecherei-Leicht-den-Ueberblick-gewinnen
+
+Fotos: https://github.com/codeformuenster/codeformuenster-fotos-bilder/tree/master/2020-03-07_open_data_day
+
 ## 2018
 
 Poster mit Ankündigung des Opendatay: https://codeformuenster.org/opendataday/poster/odd18_poster.pdf
@@ -37,6 +46,3 @@ Fotos vom Open Data Day 2016: https://github.com/codeformuenster/codeformuenster
 
 * Day: Samstag, 21.2.2015
 * Location: tba
-
-
-
