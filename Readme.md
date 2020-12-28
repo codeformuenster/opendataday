@@ -45,4 +45,7 @@ Fotos vom Open Data Day 2016: https://github.com/codeformuenster/codeformuenster
 ## 2015
 
 * Day: Samstag, 21.2.2015
-* Location: tba
+* Location: VHS Münster
+* Fotos: https://github.com/codeformuenster/codeformuenster-fotos-bilder/tree/master/2015-open-data-day
+* Zeitungsartikel: https://www.wn.de/Muenster/2015/02/1895977-Mehr-offene-Daten-gefordert-Open-Data-Day-Rat-beschaeftigt-sich-demnaechst-mit-dem-Thema
+
