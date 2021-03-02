@@ -14,6 +14,92 @@
         font-weight: normal;
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 30%;
+        height: 92%;
+        float: left;
+      }
+      .left-column h2:last-of-type, .left-column h3:last-child {
+        color: #000;
+      }
+      .left-column img {
+        border: 2px solid black;
+      }
+      .right-column {
+        width: 65%;
+        float: right;
+        padding-top: 1em;
+      }
+      img {
+        max-width: 100%;
+        max-height: 500px;
+      }
+
+      /* fancy boxen auf der letzten seite */
+
+
+      .label {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        padding: 3px 5px 4px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        white-space: nowrap;
+        font-size: 0.75em;
+        left: 10px;
+        top: -15px;
+        position: relative;
+      }
+      .box {
+        white-space: pre;
+      }
+      div.box p, div.box ul {
+        position: relative;
+        top: -20px;
+      }
+
+      .box.moody .label {
+        background-color: #F89406;
+      }
+
+      .box.happy .label {
+        background-color: #46A546;
+      }
+
+      .box.angry .label {
+        background-color: #C43C35;
+      }
+
+      div.box, code {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        padding: 0 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 25px;
+        font-size: 0.9em;
+      }
+
+      .angry {
+        background-color: #FFD7D5;
+        border-color: #C43C35;
+      }
+
+      .happy {
+        background-color: #C0E0C0;
+        border-color: #46a546;
+      }
+
+      .moody {
+        background-color: #FFECD1;
+        border-color: #F89406;
+      }
+
     </style>
   </head>
   <body>
@@ -24,9 +110,8 @@ class: center, middle
 # Civic Tech Projekte in Münster 2020
 ## Was lief gut, was lief schlecht?
 
-* Nächste Slide mit "Pfeil-Rechts"-Taste
-* Speakernotes anzeigen mit "P"-Taste
-* (diese beiden Punkte lasse ich mal noch drin, damit wir die Steuerung alle gesehen haben.)
+(Speakernotes anzeigen mit "P"-Taste)
+
 
 ???
 
@@ -36,7 +121,7 @@ Notes for the _first_ slide!
 
 # Agenda
 
-1. kurz notiert
+1. Kurz notiert
 2. Münster zählt
 3. Leezenflow
 4. Meine Stadt Transparent
@@ -45,52 +130,97 @@ Notes for the _first_ slide!
 ---
 
 # kurz notiert 1/2
-      
-             |
------------- | -------------
-![](https://raw.githubusercontent.com/codeformuenster/opendataday/gh-pages/vortraege-2021/opendatabot.jpg) | seit März 2020 automatische Tweets bei neuen Daten im open-Data-Portal
-![](https://raw.githubusercontent.com/codeformuenster/opendataday/gh-pages/vortraege-2021/muenster-was-geht.jpg) | Münsterhack 2020: Veranstaltungsempfehlungen a la Tinder, powered by open-data
-![](https://raw.githubusercontent.com/codeformuenster/opendataday/gh-pages/vortraege-2021/klimawatch.jpg) | Klimawatch: 9 neue Städte, 3 in der Pipeline, Hilfe gern gesehen
+.left-column[
+  <img src="opendatabot.jpg" width="200">
+  <img src="muenster-was-geht.jpg" width="200">
+  <img src="klimawatch.jpg" width="200">
+]
+.right-column[
+#### 1. Open Data Münster Twitter Bot 👍
+Seit März 2020 automatische Tweets bei neuen Daten im open-Data-Portal
 
+#### 2. Münster was geht?
+Münsterhack 2020: Veranstaltungsempfehlungen a la Tinder, powered by open-data
+
+#### 3. Klimawatch update
+Klimawatch: 9 neue Städte, 3 in der Pipeline, Hilfe gern gesehen
+]
 ---
 
 # kurz notiert 2/2
+.left-column[
+  <img src="stadtradeln-heatmap.png" width="200">
+  <img src="unfaelle.jpg" width="200">
+  <img src="ab-street.jpg" width="200">
+]
+.right-column[
+#### 4. Stadtradeln-Visualisierung
+Eine Stadt mit vielen RadfahrerInnen
 
-             |
------------- | -------------
-![](https://raw.githubusercontent.com/codeformuenster/opendataday/gh-pages/vortraege-2021/stadtradeln-heatmap.jpg) | eine Stadt mit vielen RadfahrerInnen: Stadtradeln-Visualisierung
-![](https://raw.githubusercontent.com/codeformuenster/opendataday/gh-pages/vortraege-2021/unfaelle.jpg) | Unfallvisualisierung mit Daten seit 2007; leider ab 2019 nur Daten mit weniger Details vom Unfallatlas NRW
-![](https://raw.githubusercontent.com/codeformuenster/opendataday/gh-pages/vortraege-2021/abstreet.jpg) | Wie wäre es, wenn ich hier die Ampelschaltung ändere? Verkehrsplanung als Computerspiel, powered by open data, WIP
-     
+#### 5. Update der Unfall-Visualisierung
+Unfallvisualisierung mit Daten seit 2007; leider ab 2019 nur Daten mit weniger Details vom Unfallatlas NRW
+
+#### 6. AB-Street
+Wie wäre es, wenn ich hier die Ampelschaltung ändere? Verkehrsplanung als Computerspiel, powered by open data, WIP
+]
 ---
 
-# Münster zählt
-      
-- Projekt vom Münsterhack 2020
-- TODO
+# Münster.jetzt
+
+- Ursprünglich Projekt vom Münsterhack 2019
+- Wurde aufgenommen bei "Zukunftsbahnof Münster" 2020
+- Termine auf Info-Bildschirmen am Banhof ausspielen
+- Software-Prototyp wurde gebaut, Umsetzung wurde von der DB gefördert
 
 ---
 
 # Leezenflow
-      
+.left-column[
 ![](https://raw.githubusercontent.com/codeformuenster/opendataday/gh-pages/vortraege-2021/leezenflow.jpg)
-
+]
+.right-column[
 - Idee vom Münsterhack 2019
-- aufgenommen durch Smart City Münster
+- Aufgenommen durch Smart City Münster
 - Design durch Leonie Winkelmann & Magdalena Schmitz im Rahmen einer Bachelorarbeit erstellt
 - Prototyp & Evaluation ab Frühling 2021 in Münster
-- viel ehrenamtliche Arbeit, aber auch viel hauptamtliche Arbeit nötig
-      
+- Viel ehrenamtliche Arbeit, aber auch viel hauptamtliche Arbeit nötig
+]
 ---
 
 # Meine Stadt Transparent: Ratsinformationssystem für Menschen
-      
+.left-column[
 ![](https://raw.githubusercontent.com/codeformuenster/opendataday/gh-pages/vortraege-2021/meine-stadt-transparent.jpg)
-           
-- hohe technische Anforderungen
-- komplexes Scraping des Ratsinformationssystems
+]
+.right-column[
+- Hohe technische Anforderungen
+- Komplexes Scraping des Ratsinformationssystems
 - [OParl](oparl.org) wird endlich beauftragt
 - Ehrenamt schon lange fertig, Hauptamt verzögert
+]
+---
+
+# Fazit aus den Projekten 2020
+
+<div class="happy box">
+.label[Gute Voraussetzungen für ein lanfristig laufendes Projekt]
+
+ - Daten verfügbar
+ - Einfache Technik
+ - Engagiertes Team
+ - Unternehmen, das das Thema übernimmt
+ - Kooperation mit der Uni
+ - Förderung / Sonstige verfügbare Geldmittel
+
+</div>
+
+<div class="moody box">
+.label[Showstopper]
+
+ - Daten nicht verfügbar
+ - Technik zu komplex
+ - Projekt-Team hört auf
+
+</div>
 
 ---
 
