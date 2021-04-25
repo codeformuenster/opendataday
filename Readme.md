@@ -6,6 +6,9 @@ Link zur Webseite: https://codeformuenster.org/opendataday/
 
 ## 2020
 
+Internetseite der Veranstaltung (archiviert): 
+https://codeformuenster.org/opendataday/2020/
+
 Vortragsfolien
  * Vortrag zum Verkehrsunfallprojekt: [vortraege-2020/Verkehrsunfallstatistiken_fuer_Muenster_fuer_jedermann.pdf](vortraege-2020/Verkehrsunfallstatistiken_fuer_Muenster_fuer_jedermann.pdf)
 
