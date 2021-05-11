@@ -4,6 +4,12 @@ Dieses Repository enthält die Webseite des Open Data Day Münster aus den verga
 
 Link zur Webseite: https://codeformuenster.org/opendataday/
 
+## 2021
+
+Seite zur Veranstaltung: https://oknrw.de/veranstaltungen/offene-kommunen-nrw-2021-opendataday/
+
+Vortragsfolien vom Münster-Projekte-2020-Rückblick: https://codeformuenster.org/opendataday/vortraege-2021/rueckblick-muenster-2020.html
+
 ## 2020
 
 Internetseite der Veranstaltung (archiviert): 
